@@ -8,7 +8,7 @@ import { Tour } from '../models/tour';
 })
 export class TourService {
 
-  URL: string = "http://localhost:3000/tours";
+  URL: string = "https://tourguide-data.onrender.com/tours";
   constructor(private http: HttpClient) { }
 
   getAllTours(): Observable<Array<Tour>> {

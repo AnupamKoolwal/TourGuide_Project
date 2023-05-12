@@ -9,7 +9,7 @@ import { TourRequest } from '../models/tour-request';
 
 export class TourRequestService {
 
-  URL: string = "http://localhost:3000/tourRequests";
+  URL: string = "https://tourguide-data.onrender.com/tourRequests";
   constructor(private http: HttpClient) { }
 
   getAllTourReqeusts() : Observable<Array<TourRequest>> {
